@@ -39,8 +39,7 @@ public class BaoTriThongTinHeSoLuongController {
             }
 
             return answer;
-        } catch (
-                Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
@@ -56,8 +55,7 @@ public class BaoTriThongTinHeSoLuongController {
             int answer = preparedStatement.executeUpdate();
 
             iUpdateTableEvent.onUpdateDataOnTableEvent();
-        } catch (
-                Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             if (connection != null) {
@@ -78,8 +76,7 @@ public class BaoTriThongTinHeSoLuongController {
             int answer = preparedStatement.executeUpdate();
 
             iUpdateTableEvent.onUpdateDataOnTableEvent();
-        } catch (
-                Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             if (connection != null) {
@@ -97,8 +94,7 @@ public class BaoTriThongTinHeSoLuongController {
             int answer = preparedStatement.executeUpdate();
 
             iUpdateTableEvent.onUpdateDataOnTableEvent();
-        } catch (
-                Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             if (connection != null) {

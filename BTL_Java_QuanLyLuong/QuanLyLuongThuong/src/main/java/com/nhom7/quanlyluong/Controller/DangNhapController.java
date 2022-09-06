@@ -26,7 +26,7 @@ public class DangNhapController {
     private static final String findExistUser = "select count(*) from TAIKHOAN where taikhoan = ? "
             + "and matkhau = ?";
 
-    private static final String quyenNguoiDung = "select TAIKHOAN.MATAIKHOAN, TENNHANVIEN, QUYEN from TAIKHOAN inner join NHANVIEN on TAIKHOAN.MATAIKHOAN = NHANVIEN.MATAIKHOAN where taikhoan = ? and matkhau = ?";
+    private static final String quyenNguoiDung = "select * from taikhoan where taikhoan = ? and matkhau = ?";
 
     public static String onLoginEvent(TaiKhoan taiKhoan) {
         try {
@@ -55,7 +55,7 @@ public class DangNhapController {
             int ID = resultSet1.getInt(1);
             XuLyFile.luuIDTaiKhoan(ID);
             String tenTaiKhoan = resultSet1.getString(2);
-            int quyen = resultSet1.getInt(3);
+            int quyen = resultSet1.getInt(4);
 
             HashMap<String, Object> data = new HashMap<>();
             data.put("TenTaiKhoan", tenTaiKhoan);

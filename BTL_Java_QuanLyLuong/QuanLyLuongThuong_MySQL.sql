@@ -4,6 +4,8 @@
 -- ------------------------------------------------------
 -- Server version	8.0.29
 
+use QuanLyLuongThuong;
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -262,7 +264,21 @@ CREATE TABLE `phucap` (
 
 LOCK TABLES `phucap` WRITE;
 /*!40000 ALTER TABLE `phucap` DISABLE KEYS */;
-INSERT INTO `phucap` VALUES (1,'Phụ cấp chức vụ, chức danh',7600000),(2,'Phụ cấp trách nhiệm',5300000),(3,'Phụ cấp nặng nhọc, độc hại',1500000),(4,'Phụ cấp thâm niên',1400000),(5,'Phụ cấp khu vực',4700000),(6,'Phụ cấp lưu động',3800000),(7,'Phụ cấp thu hút',2900000),(8,'Phụ cấp chức vụ, chức danh',7700000),(9,'Phụ cấp trách nhiệm',1800000),(10,'Phụ cấp nặng nhọc, độc hại',7200000),(11,'Phụ cấp thâm niên',2500000),(12,'Phụ cấp khu vực',5900000),(13,'Phụ cấp lưu động',8900000),(14,'Phụ cấp thu hút',9400000);
+INSERT INTO `phucap` VALUES 
+(1,'Phụ cấp chức vụ, chức danh',7600000),
+(2,'Phụ cấp trách nhiệm',5300000),
+(3,'Phụ cấp nặng nhọc, độc hại',1500000),
+(4,'Phụ cấp thâm niên',1400000),
+(5,'Phụ cấp khu vực',4700000),
+(6,'Phụ cấp lưu động',3800000),
+(7,'Phụ cấp thu hút',2900000),
+(8,'Phụ cấp chức vụ, chức danh',7700000),
+(9,'Phụ cấp trách nhiệm',1800000),
+(10,'Phụ cấp nặng nhọc, độc hại',7200000),
+(11,'Phụ cấp thâm niên',2500000),
+(12,'Phụ cấp khu vực',5900000),
+(13,'Phụ cấp lưu động',8900000),
+(14,'Phụ cấp thu hút',9400000);
 /*!40000 ALTER TABLE `phucap` ENABLE KEYS */;
 UNLOCK TABLES;
 

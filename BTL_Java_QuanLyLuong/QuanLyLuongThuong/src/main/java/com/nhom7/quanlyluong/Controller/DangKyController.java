@@ -16,7 +16,7 @@ import java.sql.SQLException;
  * @author Admin
  */
 public class DangKyController {
-    private static final String findExistUser = "select count(*) from TAIKHOAN where taikhoan = ?";
+    private static final String findExistUser = "select count(*) from taikhoan where taikhoan = ?";
     private static final String insertNewUser = "insert into TAIKHOAN(TAIKHOAN, MATKHAU, QUYEN) values(?,?,?)";
 
     public static String onRegisterEvent(TaiKhoan taikhoan) throws SQLException {

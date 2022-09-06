@@ -6,6 +6,7 @@ package com.nhom7.quanlyluong.View.QuanLyThongTinCaNhan;
 
 import com.nhom7.quanlyluong.Controller.QuanLyThongTinCaNhanController;
 import com.nhom7.quanlyluong.Model.NhanVien;
+import com.nhom7.quanlyluong.View.TrangChu.TrangChuNhanSu.TrangChuNhanSuUI;
 
 import java.sql.Date;
 import java.sql.SQLException;
@@ -218,7 +219,12 @@ public class QuanLyThongTinCaNhanUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSuaThongTinCaNhanActionPerformed
 
     private void btnQuayLaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuayLaiActionPerformed
-        dispose();
+        try {
+            new QuanLyThongTinCaNhanUI().onStartGUI();
+        } catch (SQLException ex) {
+            Logger.getLogger(QuanLyThongTinCaNhanUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        this.dispose();
     }//GEN-LAST:event_btnQuayLaiActionPerformed
 
     public void onStartGUI() throws SQLException {
